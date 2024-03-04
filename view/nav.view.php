@@ -27,17 +27,17 @@
                 <?= $_SESSION['user']['email'] ?>
             </span>
             <span class="navbar-text me-2">
-                <a href="../auth/logout.php">Logout</a>
+                <a href="/auth/logout.php">Logout</a>
             </span>
         <?php else : ?>
             <span class="navbar-text me-2">
-                <a href="../register.php">Register</a>
+                <a href="/sample-php-project/register.php">Register</a>
             </span>
             <span class="navbar-text me-2">
                 |
             </span>
             <span class="navbar-text me-2">
-                <a href="auth/login.php">Login</a>
+                <a href="/sample-php-project/auth/login.php">Login</a>
             </span>
         <?php endif; ?>
     </div>

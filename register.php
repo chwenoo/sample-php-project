@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <?php view('header.view.php'); ?>
 <?php view('nav.view.php'); ?>
 
-<form action="register.php" method="POST">
+<form action="register.php" method="POST" class="mt-5 w-50">
     <div class="mb-3">
         <label for="username" class="form-label">Username</label>
         <input type="text" name="username" class="form-control" id="username" required>

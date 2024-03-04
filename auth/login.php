@@ -41,7 +41,8 @@
 ?>
 <?php view('header.view.php'); ?>
 <?php view('nav.view.php'); ?>
-<form action="login.php" method="POST">
+
+<form action="login.php" method="POST" class="w-50 mt-5">
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Email address</label>
         <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -56,7 +57,7 @@
         <?php endif; ?>
     </div>
     <div class="mt-3">
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Login</button>
     </div>
 </form>
 <?php view('footer.view.php'); ?>

@@ -16,18 +16,11 @@ if (isLoggedIn()) {
         $stmt->execute();
     
         $info = "a note is created successfully!";
-    
-        // if (isset($_POST["action"]) === "DELETE") {
-        //     // echo $_POST['id']; die();
-        //     $id = $_POST["id"];
-        //     $delete_sql = "DELETE FROM notes WHERE id = $id";
-        //     $conn->query($delete_sql);
-        //     $info = "a note is deleted!";
-        // } 
     }
+} else {
+    header("Location: ../auth/login.php");
+    exit();
 }
-
-
 
 ?>
 
